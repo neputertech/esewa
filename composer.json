@@ -1,0 +1,30 @@
+{
+    "name": "neputertech/esewa",
+    "description": "This is wrapper for esewa Payment Gateway for laravel",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Neputer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "pratibimba-neputer",
+            "email": "pratibimbakhadka@neputer.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "illuminate/console": "^7|^8|^9",
+        "illuminate/support": "^7|^8|^9"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Neputer\\Laravel\\EsewaServiceProvider"
+            ]
+        }
+    }
+}
