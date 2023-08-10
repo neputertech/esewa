@@ -12,7 +12,7 @@ class Esewa {
 
     public function __construct()
     {
-        $this->endpoint = "https://uat.esewa.com.np/epay";
+        $this->endpoint = Config::get('esewa.debug') ? "https://uat.esewa.com.np/epay" : "https://esewa.com.np/epay";
         $this->formMethod = "POST";
     }
 
